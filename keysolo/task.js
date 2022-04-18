@@ -20,8 +20,6 @@ class Game {
     document.addEventListener('keyup', (key) => {
       if (key.key.toLowerCase() === this.currentSymbol.innerText.toLowerCase()) {
         this.success();
-      } else if (serviceKeys.includes(key.code)) {
-        console.log(1);
       } else {
         this.fail();
       }
